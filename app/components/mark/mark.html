@@ -1,0 +1,24 @@
+<div class="mark-container">
+
+    <h1>Text conversion tool</h1>
+    <div class="demo">
+    <textarea ng-model="invoer"
+              select-on-focus
+              ng-paste="handlePaste($event)"
+              spellcheck="false"
+              class="tekstvak"
+            ></textarea>
+
+    </div>
+    <button ng-click="mark()">
+        Mark hooks
+    </button>
+    <button class="convert">
+        <a ng-click="urldecode()">
+            urldecode
+        </a>
+    </button>
+    <br>
+    <div ng-bind-html="uitvoer | toTrusted"
+         class="uitvoer"></div>
+</div>

@@ -1,0 +1,22 @@
+<div class="auto-container">
+
+<div>Testing tab autocomplete . . .
+    <span ng-bind="auto.version"></span>
+</div>
+    Invoer
+    <input class="invoer-test"
+            type="text"
+           ng-model="auto.invoer"
+            ng-keydown="auto.keydown($event)"
+            autofocus>
+
+    <div class="files">
+        <ul>
+            <li ng-repeat="file in auto.files">
+                <span ng-show="file.type === 'dir'">*</span>
+                <span ng-bind="file.name"></span>
+            </li>
+        </ul>
+
+    </div>
+</div>

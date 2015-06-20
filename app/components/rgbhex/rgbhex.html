@@ -1,0 +1,36 @@
+<div class="converter">
+    <h1>RGB2HEX</h1>
+    <div class="converter-content">
+        <div class="converter-box">
+            <input ng-model="rgb1"
+                   ng-class="{'error':rgb1Err}"
+                   >
+            <input ng-model="rgb2"
+                   ng-class="{'error':rgb2Err}"
+                   >
+            <input ng-model="rgb3"
+                   ng-class="{'error':rgb3Err}"
+                   >
+            <div>
+                <div class="to-hex" ng-click="convertToHex()"></div>
+                <div class="to-rgb" ng-click="convertToRgb()"></div>
+            </div>
+            <input ng-model="hex"
+                   ng-class="{'error':hexErr}">
+        </div>
+        <div class="showcase" style="background:{{selectedColor}}"></div>
+        <div class="devtool">
+            <input ng-model="devRgb"
+                   ng-change="devToHex()"
+                   class="dev-rgb">
+            <div>
+                <div class="to-hex" ng-click="convertToHex()"></div>
+                <div class="to-rgb" ng-click="convertToRgb()"></div>
+            </div>
+            <input ng-model="devHex"
+                   ng-change="devToRgb()"
+                   class="dev-hex">
+        </div>
+        <div class="dev-showcase" style="background:{{devHex}}"></div>
+    </div>
+</div>

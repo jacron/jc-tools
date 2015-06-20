@@ -1,0 +1,133 @@
+/* app css stylesheet */
+
+.menu {
+/*  list-style: none;*/
+  border-bottom: 0.1em solid black;
+  padding: 0 0 0.5em 10px;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+textarea {
+    width: 300px;
+    height: 100px;
+}
+.uitvoer {
+    font-family: monospace;
+    font-size: 20px;
+    background: #eef;
+    padding: 8px;
+    margin: 10px 0;
+}
+.uitvoer i {
+    color: #fb3;
+    font-style: normal;
+}
+.uitvoer a {
+    color: #3bf;
+}
+.showcase {
+    height: 60px;
+    width: 356px;
+    margin: 12px 0 20px 0;
+}
+.converter-content {
+    padding: 4px;
+    border: 1px solid #efefef;
+}
+.converter-box {
+    padding: 4px;
+}
+.converter-box div,
+.devtool div {
+    display: inline-block;
+}
+.converter-box input {
+    width: 70px;
+}
+.to-hex::before {
+    content: '\25BA';
+}
+.to-rgb::before {
+    content: '\25C4';
+}
+.error {
+    color: red;
+}
+.converter {
+    padding: 8px;
+}
+.converter h1 {
+    margin: 0 0 0 180px
+}
+.dev-showcase {
+    height: 60px;
+    width: 356px;
+    margin: 12px 0 0 0;
+}
+.dev-rgb {
+    width: 130px;
+}
+.dev-hex {
+    width: 70px;
+}
+.mark-container,
+.auto-container {
+    padding: 8px;
+}
+.invoer-test {
+    width: 350px;
+    margin: 5px 0;
+}
+.demo {
+    margin-bottom: 10px;
+}
+.bottomline {
+    text-align: center;
+}
+.center-container {
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 10px;
+}
+h1 {
+    color: green;
+}
+.tekstvak {
+    resize: both;
+}
+.files {
+    position: absolute;
+    right: 0;
+    top: 70px;
+}
+.files ul {
+    list-style: none;
+    font-size: 12px;
+}
+.files li {
+    width: 200px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
