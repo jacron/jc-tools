@@ -10,7 +10,6 @@ angular.module('myApp.service', [])
             service = this;
 
         service.getFromDir = function(params) {
-            //console.log(params);
             var req = $http.get(remoteForDir, {
                 params: params
             });
@@ -21,5 +20,5 @@ angular.module('myApp.service', [])
                     console.log(res);
             });
 
-        }
+        };
     });

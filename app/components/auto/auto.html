@@ -3,13 +3,19 @@
 <div>Testing tab autocomplete . . .
     <span ng-bind="auto.version"></span>
 </div>
-    Invoer
+    Input
     <input class="invoer-test"
             type="text"
            ng-model="auto.invoer"
             ng-keydown="auto.keydown($event)"
             autofocus>
-
+    <br>(e.g. /Volumes etc.)
+<br>
+    Input (directive)
+    <input class="invoer-test"
+           jc-tab-autocomplete
+           ng-model="auto.invoer2"
+           autofocus>
     <div class="files">
         <ul>
             <li ng-repeat="file in auto.files">

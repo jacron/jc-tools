@@ -9,7 +9,8 @@ angular.module('myApp', [
     'myApp.version',
     'myApp.util',
     'myApp.auto',
-    'myApp.service'
+    'myApp.service',
+    'jcDirectives'
 ]).
     config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/view1'});

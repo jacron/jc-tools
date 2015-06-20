@@ -8,8 +8,6 @@ angular.module('myApp.util', [])
 
         this.stripAfterSlash = function(s) {
             var pos = s.lastIndexOf('/');
-            //console.log('pos', pos);
-            //console.log('length', s.length);
 
             if (pos === -1 || pos === s.length - 1) {
                 return s;
@@ -20,14 +18,11 @@ angular.module('myApp.util', [])
         this.stripBeforeSlash = function(s) {
             var pos = s.lastIndexOf('/'),
                 toMatch;
-            //console.log('pos', pos);
-            //console.log('length', s.length);
 
             if (pos === -1) {
                 return s;
             }
-            toMatch = s.substr(pos + 1);
-            //console.log(toMatch);
+            toMatch = s.substr(pos + 1);//console.log(toMatch);
             return toMatch;
         };
 
